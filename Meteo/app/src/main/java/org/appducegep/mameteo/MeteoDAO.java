@@ -62,7 +62,7 @@ public class MeteoDAO extends SQLiteOpenHelper {
         meteoDuJour.put("soleilOuNuage", soleilOuNuage);
         meteoDuJour.put("date", DateFormat.format("MMMM d, yyyy ", (new Date()).getTime()).toString());
         meteoDuJour.put("vent",vent);
-        meteoDuJour.put("humudite",humidite);
+        meteoDuJour.put("humidite",humidite);
         long newRowId = db.insert("meteo", null, meteoDuJour);
 
     }

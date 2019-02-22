@@ -87,13 +87,16 @@ public class PageMeteo extends AppCompatActivity {
             Element elementVille = (Element)elementLieu.getElementsByTagName("name").item(0);
             String ville = elementVille.getTextContent();
             String vent = ventForce + ventDirection;
+            Element elementTemperature = (Element)doc.getElementsByTagName("temp_c").item(0);
+            float temperature = Float.parseFloat(elementTemperature.getTextContent());
 
             System.out.println("");
             System.out.println("/////////////////////////////");
-            System.out.println("Ville = " + ville);
-            System.out.println("Meteo = " + soleilOuNuage);
-            System.out.println("Vent : " + vent + "\n");
-            System.out.println("Humidite = " + humidite);
+            System.out.println("/// Ville = " + ville);
+            System.out.println("/// Meteo = " + soleilOuNuage);
+            System.out.println("/// Vent : " + vent + "\n");
+            System.out.println("/// Humidite = " + humidite);
+            System.out.println("/// Température = " + temperature);
             System.out.println("/////////////////////////////");
 
             TextView affichageTitrePage = (TextView)this.findViewById(R.id.titre_page_meteo);
