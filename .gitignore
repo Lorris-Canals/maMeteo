@@ -1,0 +1,13 @@
+*.iml
+Meteo/.gradle
+Meteo/local.properties
+Meteo/.idea/caches
+Meteo/.idea/libraries
+Meteo/.idea/modules.xml
+Meteo/.idea/workspace.xml
+Meteo/.idea/navEditor.xml
+Meteo/.idea/assetWizardSettings.xml
+Meteo/.DS_Store
+Meteo/build
+Meteo/captures
+Meteo/.externalNativeBuild
